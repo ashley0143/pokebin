@@ -1,5 +1,5 @@
 # POKEBİN 
-Hastein Plus is an open-source Pastebin software written in node.js, which is easily installable in any network.  
+Pokebin is an open-source Pastebin software written in node.js, which is easily installable in any network.  
 It bases upon [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus) and got enhanced in matters of **Design, Speed and Simplicity**.
 
 ## Features
