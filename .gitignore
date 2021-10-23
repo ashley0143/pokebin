@@ -1,0 +1,22 @@
+# IDE (IntelliJ IDEA)
+.idea
+HastebinPlus.iml
+
+# IDE (Microsoft Visual Studio)
+obj/
+Microsoft.NodejsTools.WebRole.dll
+.ntvs_analysis.dat
+*.njsproj
+*.sln
+*.suo
+
+# Application
+data
+node_modules
+*.min.css
+*.min.js
+!jquery.min.js
+!highlight.min.js
+
+# NodeJS
+npm-debug.log
