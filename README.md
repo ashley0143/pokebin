@@ -29,7 +29,7 @@ It bases upon [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus) an
 | `keyLength`            | The length of the pastes' key                   | `10`          |
 | `maxLength`            | Maximum chars in a paste                        | `500000`      |
 | `createKey`            | Needs to be in front of paste to allow creation | ` `           |
-| `documents`            | Static documents to serve                       | See below     |
+| `documents`            | Static documents to serve                       |      |
 
 ### Da Config
 ```json
@@ -42,8 +42,7 @@ It bases upon [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus) an
 	"createKey": "",
 	"documents": {
 		"about": "./README.md",
-		"javaTest": "./documents/test.java"
-	}
+ 	}
 }
 ```
 
