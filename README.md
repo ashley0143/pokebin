@@ -1,6 +1,6 @@
 # POKEBİN 
 Pokebin is an open-source Pastebin software written in node.js, which is easily installable in any network.  
-It bases upon [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus) and got enhanced in matters of **Design, Speed and Simplicity**.
+It bases upon [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus) and got enhanced in matters of **Design, Speed and Simplicity** lol
 
 ## Features
 * Syntax-Highlighting
@@ -31,7 +31,7 @@ It bases upon [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus) an
 | `createKey`            | Needs to be in front of paste to allow creation | ` `           |
 | `documents`            | Static documents to serve                       | See below     |
 
-### Default Config
+### Da Config
 ```json
 {
 	"host": "0.0.0.0",
@@ -47,7 +47,7 @@ It bases upon [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus) an
 }
 ```
 
-## Authors
+## Authors n stuff
 * [haste](https://github.com/seejohnrun/haste-server): John Crepezzi - MIT License
 * [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus): Marvin Menzerath - MIT License
 * [jQuery](https://github.com/jquery/jquery): MIT License
