@@ -16,7 +16,8 @@ config.host = process.env.HOST || config.host || 'localhost';
 // logger-setup
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {colorize: true, level: 'verbose'});
-logger.info('Welcome to Hastebin Plus!');
+logger.info('Welcome to PokeBin!');
+logger.info('See the source code! https://github.com/iamashley0/pokebin ');
 
 // init file-storage
 var fileStorage = new FileStorage(config.dataPath);
@@ -27,9 +28,8 @@ for (var name in config.documents) {
 	var data = fs.readFileSync(path, 'utf8');
 	if (data) {
 		fileStorage.set(name, data, function(success) {});
-		logger.verbose('Created document: ' + name + " ==> " + path);
-	} else {
-		logger.warn('Unable to find document: ' + name + " ==> " + path);
+ 	} else {
+		console.warn('Unable to find document: ' + name + " ==> " + path);
 	}
 }
 
@@ -52,12 +52,10 @@ for (var i = 0; i < files.length; i++) {
 	if ((item.indexOf('.css') === item.length - 4) && (item.indexOf('.min.css') === -1)) {
 		dest = item.substring(0, item.length - 4) + '.min.css';
 		fs.writeFileSync(__dirname + '/static/' + dest, new cssCompressor().minify(fs.readFileSync(__dirname + '/static/' + item, 'utf8')).styles, 'utf8');
-		logger.verbose('Compressed: ' + item + ' ==> ' + dest);
-	} else if ((item.indexOf('.js') === item.length - 3) && (item.indexOf('.min.js') === -1)) {
+ 	} else if ((item.indexOf('.js') === item.length - 3) && (item.indexOf('.min.js') === -1)) {
 		dest = item.substring(0, item.length - 3) + '.min.js';
 		fs.writeFileSync(__dirname + '/static/' + dest, jsCompressor.minify(__dirname + '/static/' + item).code, 'utf8');
-		logger.verbose('Compressed: ' + item + ' ==> ' + dest);
-	}
+ 	}
 }
 
 // setup routes and request-handling
