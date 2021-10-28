@@ -11,7 +11,7 @@ It bases upon [hastebinplus](https://github.com/MarvinMenzerath/HastebinPlus) an
 ## Installation
  
 1. Install Git and node.js: `sudo apt-get install git nodejs`
-2. Clone this repository: `git clone https://github.com/ashpotter/pokebin/pokebin.git pokebin-plus`
+2. Clone this repository: `git clone https://github.com/ashpotter/pokebin/pokebin.git pokebin`
 3. Open `config.json` and change the settings (if you want to)
 4. Install dependencies: `npm install`
 5. Start the application: `npm start`
